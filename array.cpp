@@ -1,11 +1,13 @@
 #include <iostream>
 #include <iomanip>
 #include <stdlib.h>
+#include <array>
 
 using namespace std;
 
 void ex1();
 void ex2(int x);
+void accessMatrix(int A[] ,int B[]);
 
 int main() {
     ex2(1);
@@ -34,3 +36,22 @@ void ex2(int x) {
     }
     while(i <= j);
 }
+
+//矩陣相乘
+/*
+void accessMatrix(int A[] ,int B[]) {
+    int i,j,k = 0;
+    int C[][];
+    int sum;
+    int N;
+    for(i = 0;i < N;i++){
+        for(j = 0;j < N;j++) {
+            sum = 0;
+            for(k = 0;k < N;k++) {
+                sum += A[i][k] * B[k][j];
+            }
+            C[i][j] = sum;
+        }
+    }
+}
+*/
